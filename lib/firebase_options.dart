@@ -71,4 +71,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'rent-a-car-app-2024.appspot.com',
     iosBundleId: 'com.example.rentACarApp',
   );
+
 }
