@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:rent_a_car_app/app/views/view_car/car_list_view.dart';
+import 'package:rent_a_car_app/data/car_data.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
-  const ElevatedButtonWidget({
-    super.key,
+  final Car car;
+  ElevatedButtonWidget({
+    super.key, required this.car,
   });
 
   @override
@@ -11,7 +14,16 @@ class ElevatedButtonWidget extends StatelessWidget {
       width: 320,
       height: 54,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushAndRemoveUntil(
+                              MaterialPageRoute(builder: (context) => CarListView(car: Car(
+        model: car.model,
+        distance: car.distance,
+        fuelCapacity: car.fuelCapacity,
+        pricePerHour: car.pricePerHour,
+      ),))
+                              , (route) => false);
+        },
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
           backgroundColor: Colors.black,
