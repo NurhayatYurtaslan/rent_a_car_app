@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:rent_a_car_app/app/views/view_car_detail/car_detail_view.dart';
 import 'package:rent_a_car_app/data/car_data.dart';
 
 class CarCardWidget extends StatelessWidget {
@@ -11,10 +12,10 @@ class CarCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(builder: (context) => CardDetailsPage(car: car,))
-        // );
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => CarDetailView(car: car,))
+        );
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),

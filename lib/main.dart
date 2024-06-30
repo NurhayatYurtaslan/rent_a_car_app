@@ -1,7 +1,8 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:rent_a_car_app/app/views/view_car/car_list_view.dart';
+import 'package:rent_a_car_app/app/views/view_onboarding/onboarding_view.dart';
+import 'package:rent_a_car_app/data/car_data.dart';
 import 'package:rent_a_car_app/firebase_options.dart';
 
 void main() async {
@@ -14,8 +15,13 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, 
-    home: CarListView());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false, home: OnboardingView(car: Car(
+      model: 'Fortuner GR',
+      distance: 970,
+      fuelCapacity: 50,
+      pricePerHour: 45,
+    ),));
   }
 }
 

@@ -6,25 +6,25 @@ class CarListView extends StatelessWidget {
   final List<Car> cars = [
     Car(
       model: 'Fortuner GR',
-      distance: 870,
+      distance: 1070,
+      fuelCapacity: 50,
+      pricePerHour: 45,
+    ),
+    Car(
+      model: 'Fortuner GR',
+      distance: 850,
       fuelCapacity: 50,
       pricePerHour: 45,
     ),
     Car(
       model: 'Fortuner GR',
       distance: 870,
-      fuelCapacity: 50,
-      pricePerHour: 45,
-    ),
-    Car(
-      model: 'Fortuner GR',
-      distance: 870,
-      fuelCapacity: 50,
+      fuelCapacity: 70,
       pricePerHour: 45,
     ),
   ];
 
-  CarListView({super.key});
+  CarListView({super.key, required Car car});
 
   @override
   Widget build(BuildContext context) {
