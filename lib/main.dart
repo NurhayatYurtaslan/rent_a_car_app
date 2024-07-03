@@ -16,12 +16,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: OnboardingView(car: Car(
-      model: 'Fortuner GR',
+        debugShowCheckedModeBanner: false, 
+        home: OnboardingView(car: Car(
+              model: 'Fortuner GR',
       distance: 970,
       fuelCapacity: 50,
       pricePerHour: 45,
-    ),));
+        
+        ),),
+    //     OnboardingView(car: Car(
+    //   model: 'Fortuner GR',
+    //   distance: 970,
+    //   fuelCapacity: 50,
+    //   pricePerHour: 45,
+    // ),),
+    );
   }
 }
 

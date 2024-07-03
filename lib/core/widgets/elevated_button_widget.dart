@@ -4,7 +4,7 @@ import 'package:rent_a_car_app/data/car_data.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
   final Car car;
-  ElevatedButtonWidget({
+  const ElevatedButtonWidget({
     super.key, required this.car,
   });
 

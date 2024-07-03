@@ -41,15 +41,26 @@ class CarDetailView extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: Row(children: [
-              AvatarWidget(),
-              SizedBox(
-                width: 20,
-              ),
-              MapsWidget(),
-            ]),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Row(
+              children: [
+                const AvatarWidget(),
+                const SizedBox(
+                  width: 20,
+                ),
+                Expanded(
+                  child: MapsWidget(
+                    car: Car(
+                      model: 'Fortuner GR',
+                      distance: 970,
+                      fuelCapacity: 50,
+                      pricePerHour: 45,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             height: 20,
@@ -58,15 +69,15 @@ class CarDetailView extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                MoreCarListWidget(car: car,),
+                MoreCarListWidget(car: car),
                 const SizedBox(
                   height: 5,
                 ),
-                MoreCarListWidget(car: car,),
+                MoreCarListWidget(car: car),
                 const SizedBox(
                   height: 5,
                 ),
-                MoreCarListWidget(car: car,),
+                MoreCarListWidget(car: car),
               ],
             ),
           ),
