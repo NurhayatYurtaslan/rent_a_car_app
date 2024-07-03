@@ -17,8 +17,9 @@ dependencies:
   firebase_core: ^3.1.1
   cloud_firestore: ^5.0.2
   #maps
-  flutter_map: ^7.0.1
+  flutter_map: ^7.0.2
   latlong2: ^0.9.1
+
 
   
 
