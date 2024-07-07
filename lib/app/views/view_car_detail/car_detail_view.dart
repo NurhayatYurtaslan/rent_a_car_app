@@ -3,7 +3,7 @@ import 'package:rent_a_car_app/app/views/view_maps_details/maps_details_view.dar
 import 'package:rent_a_car_app/core/widgets/avatar_widget.dart';
 import 'package:rent_a_car_app/core/widgets/car_card_widget.dart';
 import 'package:rent_a_car_app/core/widgets/more_car_list_widget.dart';
-import 'package:rent_a_car_app/data/car_data.dart';
+import 'package:rent_a_car_app/core/data/models/car_data.dart';
 
 class CarDetailView extends StatefulWidget {
   final Car car;

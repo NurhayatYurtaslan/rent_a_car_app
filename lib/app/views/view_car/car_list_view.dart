@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/core/widgets/car_card_widget.dart';
-import 'package:rent_a_car_app/data/car_data.dart';
+import 'package:rent_a_car_app/core/data/models/car_data.dart';
 
 class CarListView extends StatelessWidget {
   final List<Car> cars = [
