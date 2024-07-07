@@ -1,35 +1,38 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rent_a_car_app/app/bloc/car_bloc.dart';
+import 'package:rent_a_car_app/app/bloc/car_event.dart';
 import 'package:rent_a_car_app/app/views/view_onboarding/onboarding_view.dart';
-import 'package:rent_a_car_app/core/data/models/car_data.dart';
 import 'package:rent_a_car_app/firebase_options.dart';
+import 'package:rent_a_car_app/injection_container.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
+  initInjection();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false, 
-        home: OnboardingView(car: Car(
-              model: 'Fortuner GR',
-      distance: 970,
-      fuelCapacity: 50,
-      pricePerHour: 45,
-        
-        ),),
-    //     OnboardingView(car: Car(
-    //   model: 'Fortuner GR',
-    //   distance: 970,
-    //   fuelCapacity: 50,
-    //   pricePerHour: 45,
-    // ),),
+    return BlocProvider(
+      create: (_) => getIt<CarBloc>()..add(LoadCars()),
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const OnboardingView(),
+      ),
     );
   }
 }
