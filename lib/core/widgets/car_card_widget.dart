@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/app/views/view_car_detail/car_detail_view.dart';
-import 'package:rent_a_car_app/data/car_data.dart';
+import 'package:rent_a_car_app/core/data/car_data.dart';
 
 class CarCardWidget extends StatelessWidget {
   final Car car;

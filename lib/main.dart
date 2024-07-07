@@ -2,7 +2,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/app/views/view_onboarding/onboarding_view.dart';
-import 'package:rent_a_car_app/data/car_data.dart';
+import 'package:rent_a_car_app/core/data/car_data.dart';
 import 'package:rent_a_car_app/firebase_options.dart';
 
 void main() async {

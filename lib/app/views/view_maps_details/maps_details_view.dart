@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:rent_a_car_app/data/car_data.dart';
+import 'package:rent_a_car_app/core/data/car_data.dart';
 
 class MapsDetailsView extends StatelessWidget {
   final Car car;
