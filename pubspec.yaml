@@ -19,6 +19,11 @@ dependencies:
   #maps
   flutter_map: ^7.0.2
   latlong2: ^0.9.1
+  #state managment
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  
+
 
 
   
