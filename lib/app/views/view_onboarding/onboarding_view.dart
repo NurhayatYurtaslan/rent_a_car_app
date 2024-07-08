@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/core/widgets/elevated_button_widget.dart';
-import 'package:rent_a_car_app/core/data/models/car_data.dart';
+
 
 class OnboardingView extends StatelessWidget {
   
-  final Car car;
-const OnboardingView({super.key, required this.car});
+const OnboardingView({super.key});
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,28 +22,28 @@ const OnboardingView({super.key, required this.car});
                 ),
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Column(
                 children: [
-                  const Text(
+                  Text(
                     "Premium cars  \nEnjoy the luxury",
                     style: TextStyle(
                         color: Colors.black54,
                         fontSize: 32,
                         fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
-                  const Text(
+                  Text(
                     "Premium and prestige car daily rental.  \nExperience the thrill at a lower price",
                     style: TextStyle(color: Colors.grey, fontSize: 16),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
                   ElevatedButtonWidget(
-                    car: car
+                   
                   ),
                 ],
               ),

@@ -22,11 +22,8 @@ dependencies:
   #state managment
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
-  
-
-
-
-  
+  #dependency injection
+  get_it: ^7.7.0
 
 dev_dependencies:
   flutter_test:
