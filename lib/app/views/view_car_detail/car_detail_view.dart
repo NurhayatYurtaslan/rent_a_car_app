@@ -4,6 +4,7 @@ import 'package:rent_a_car_app/core/widgets/avatar_widget.dart';
 import 'package:rent_a_car_app/core/widgets/car_card_widget.dart';
 import 'package:rent_a_car_app/core/widgets/more_car_list_widget.dart';
 import 'package:rent_a_car_app/core/data/models/car_data.dart';
+import 'package:rent_a_car_app/gen/assets.gen.dart';
 
 class CarDetailView extends StatefulWidget {
   final Car car;
@@ -109,7 +110,7 @@ class _CarDetailViewState extends State<CarDetailView>
                       child: Transform.scale(
                         scale: _animation!.value,
                         alignment: Alignment.center,
-                        child: Image.asset('assets/images/maps.png', fit: BoxFit.cover),
+                        child: Image.asset(Assets.images.maps.path, fit: BoxFit.cover),
                       ),
                     ),
                   ),

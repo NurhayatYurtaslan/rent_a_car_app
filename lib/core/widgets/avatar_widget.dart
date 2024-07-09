@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent_a_car_app/gen/assets.gen.dart';
 
 class AvatarWidget extends StatelessWidget {
   const AvatarWidget({
@@ -16,20 +17,22 @@ class AvatarWidget extends StatelessWidget {
             boxShadow: const [
               BoxShadow(color: Colors.black12, blurRadius: 10, spreadRadius: 5)
             ]),
-        child: const Column(
+        child: Column(
           children: [
             CircleAvatar(
               radius: 40,
-              backgroundImage: AssetImage('assets/images/user.png'),
+              backgroundImage: AssetImage(
+                Assets.images.user.path
+                ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'Jane Cooper',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text(
+            const Text(
               '\$4.254',
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
             )
