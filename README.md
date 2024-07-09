@@ -1,4 +1,17 @@
 # Rent a Car App
+## Screenshots
+## Screenshots
+
+Onboarding Page            | List Cars Page            | Car Detail Page           | Maps Page
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/NurhayatYurtaslan/rent_a_car_app/blob/main/images/1.png?raw=true" width="200"/> | <img src="https://github.com/NurhayatYurtaslan/rent_a_car_app/blob/main/images/2.png?raw=true" width="200"/> | <img src="https://github.com/NurhayatYurtaslan/rent_a_car_app/blob/main/images/3.png?raw=true" width="200"/> | <img src="https://github.com/NurhayatYurtaslan/rent_a_car_app/blob/main/images/4.png?raw=true" width="200"/> 
+
+
+Firestore Page                    
+:-------------------------:
+![](https://github.com/NurhayatYurtaslan/rent_a_car_app/blob/main/images/6.PNG?raw=true)
+
+
 
 ## Dependencies
 
