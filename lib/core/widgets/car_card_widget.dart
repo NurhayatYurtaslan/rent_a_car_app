@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/app/views/view_car_detail/car_detail_view.dart';
 import 'package:rent_a_car_app/core/data/models/car_data.dart';
+import 'package:rent_a_car_app/gen/assets.gen.dart';
 
 class CarCardWidget extends StatelessWidget {
   final Car car;
@@ -29,7 +30,7 @@ class CarCardWidget extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              'assets/images/car_image.png',
+              Assets.images.carImage.path,
               height: 120,
             ),
             Text(
@@ -46,13 +47,13 @@ class CarCardWidget extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Image.asset('assets/icons/gps.png'),
+                        Image.asset(Assets.icons.gps.path),
                         Text(' ${car.distance.toStringAsFixed(0)}km')
                       ],
                     ),
                     Row(
                       children: [
-                        Image.asset('assets/icons/pump.png'),
+                        Image.asset(Assets.icons.pump.path),
                         Text(' ${car.fuelCapacity.toStringAsFixed(0)}L')
                       ],
                     ),

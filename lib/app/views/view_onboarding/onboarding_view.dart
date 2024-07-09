@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent_a_car_app/core/widgets/elevated_button_widget.dart';
+import 'package:rent_a_car_app/gen/assets.gen.dart';
 
 
 class OnboardingView extends StatelessWidget {
@@ -15,9 +16,9 @@ const OnboardingView({super.key});
             Expanded(
               flex: 2,
               child: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/images/onboarding.png'),
+                      image: AssetImage(Assets.images.onboarding.path),
                       fit: BoxFit.cover),
                 ),
               ),

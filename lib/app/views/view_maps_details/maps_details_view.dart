@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:rent_a_car_app/core/data/models/car_data.dart';
+import 'package:rent_a_car_app/gen/assets.gen.dart';
 
 class MapsDetailsView extends StatelessWidget {
   final Car car;
@@ -151,7 +152,7 @@ Widget carDetailsCard({required Car car}) {
         Positioned(
           top: 50,
           right: 20,
-          child: Image.asset('assets/images/white_car.png'),
+          child: Image.asset(Assets.images.whiteCar.path),
         ),
       ],
     ),
